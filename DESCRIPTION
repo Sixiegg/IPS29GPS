@@ -1,0 +1,17 @@
+Package: IPS29GPS
+Type: Package
+Title:  Predicted immuno-prognostic subtypes in bulk and single-cell data
+Version: 0.1.0
+Author: Daihan Ji
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 4.1.0)
+RoxygenNote: 7.1.2
+Imports: 
+    Seurat,
+    GSVA
