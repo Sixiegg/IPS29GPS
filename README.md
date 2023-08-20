@@ -22,26 +22,23 @@ bulkresult <- predict_29pairs(bulktest,Pairs,genetype = "Symbol")
 head(bulkresult)
 
 library(IPS29GPS)
-library(GSVA)
 library(Seurat)
 ## Predicted immuno-prognostic subtypes in single-cell data.
-
-# ssGSEA result
-ssGSEA_result <- predict_scrna(SingleTest,gene_set,split.by="orig.ident",method="ssGSEA")
-str(ssGSEA_result)
-
-##RF result
-RF_result <- predict_scrna(SingleTest,gene_set,split.by="orig.ident",method="RF")
-str(RF)
-
 ##KNN result
-KNN_result <- predict_scrna(SingleTest,gene_set,split.by="orig.ident",method="KNN")
-str(KNN)
+KNN_result <- predict_scrna(SingleTest, split.by="orig.ident",method="knn")
+
+##NB result
+NB <- predict_scrna(SingleTest, split.by="orig.ident",method="nb")
+
+
+##MEAN result
+MEAN_result <- predict_scrna(SingleTest, split.by="orig.ident",method="mean")
+str(MEAN)
 
 ##Final result
-Final_result <- predict_scrna(SingleTest,gene_set,split.by="orig.ident",method="All")
-str(Final_result)
+Final_result <- predict_scrna(SingleTest, split.by="orig.ident",method="All")
+
 #final subtype
-Final_result$Final_subtype
+Final_result$Subtype
 
 ```

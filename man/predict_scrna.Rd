@@ -4,16 +4,14 @@
 \alias{predict_scrna}
 \title{Predicted immuno-prognostic subtypes in single-cell data.}
 \usage{
-predict_scrna(data, gene_set, split.by = "orig.ident", method = "All")
+predict_scrna(data, split.by = "orig.ident", method = "All")
 }
 \arguments{
-\item{data}{Seurat object. Please use FindVariableFeatures function from Seurat to identify highly variable features !!!}
-
-\item{gene_set}{A list of C1 and C2 gene sets}
+\item{data}{Seurat object.}
 
 \item{split.by}{Sample class}
 
-\item{method}{ssGSEA, RF, KNN. Default: All (including three models)}
+\item{method}{knn, nb, mean, All Default: All (including three models)}
 }
 \value{
 
@@ -22,5 +20,5 @@ predict_scrna(data, gene_set, split.by = "orig.ident", method = "All")
 Predicted immuno-prognostic subtypes in single-cell data.
 }
 \examples{
-
+test <- predict_scrna(SingleTest,split.by = "orig.ident", method = "All")
 }

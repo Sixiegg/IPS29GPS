@@ -20,6 +20,6 @@ predict_29pairs(data, Pairs, genetype = "Symbol")
 Predicted immuno-prognostic subtypes in bulk transcriptomic data.
 }
 \examples{
-predict_29pairs(bulktest,Pairs,genetype = "Symbol")
+test <- predict_29pairs(bulktest,Pairs,genetype = "Symbol")
 
 }

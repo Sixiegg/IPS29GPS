@@ -14,14 +14,6 @@
 #'   head(Pairs)
 "Pairs"
 
-#' gene_set
-#'
-#' A list of C1 and C2 gene sets
-#'
-#' @examples
-#'   head(gene_set)
-"gene_set"
-
 #' SingleTest
 #'
 #' From part of GSE149614
@@ -29,22 +21,6 @@
 #' @examples
 #'   head(SingleTest)
 "SingleTest"
-
-#' RF
-#'
-#' Random forest model
-#'
-#' @examples
-#'   str(RF)
-"RF"
-
-#' KNN
-#'
-#' K nearest neighbors model
-#'
-#' @examples
-#'   str(KNN)
-"KNN"
 
 #' pair_select
 #'

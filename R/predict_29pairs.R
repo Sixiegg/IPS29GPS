@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#'predict_29pairs(bulktest,Pairs,genetype = "Symbol")
+#'test <- predict_29pairs(bulktest,Pairs,genetype = "Symbol")
 #'
 predict_29pairs <- function(data,Pairs,
                             genetype = "Symbol" ##"ID")
